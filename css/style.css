@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/* Global css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 400;
+    /* 1.6*10=16px */
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 3.6rem;
+    margin: 1.6rem 0;
+}
+
+h2{
+    font-weight: 800;
+    font-size: 2.4rem;
+    margin: 1.6rem 0;
+}
+
+p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 1.6rem 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+section{
+    padding: 100px 0;
+}
+
+/* Header section */
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6)),url(../img/slide-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo h1{
+    margin: 0;
+    color: #4caf50;
+    font-size: 3.2rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 8%;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+
+nav ul li a:hover{
+    color: #4caf50;
+    transition: .3s ease-in-out;
+}
+
+nav box-icon{
+    display: none;
+}
+
+.header-content{
+    width: 50%;
+    position: relative;
+    top: 16%;
+    left: 8%;
+}
+
+.header-content h1,
+.header-content p{
+    color: whitesmoke;
+}
+
+.header-content h1{
+    font-size: 3rem;
+}
+
+form{
+    margin: 2.4rem 0;
+}
+
+input{
+    font-size: 1.8rem;
+}
+
+input[type=text],
+input[type=email]{
+    padding: 12px 20px;
+    width: 50%;
+    margin: 1.2rem 0;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+input[type=submit]{
+    background-color: #4caf50;
+    width: 50%;
+    color: #fff;
+    padding: 14px 20px; 
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+input::placeholder{
+    color: #ccc;
+    font-size: 1.3rem;
+}
+
+/* About section */
+.about-left,
+.about-middle,
+.about-right{
+    flex-basis: 30%;
+    padding: 1.6rem;
+}
+
+.about-left h2{
+    font-size: 2rem;
+}
+
+.btn{
+    background-color: #4caf50;
+    color: #fff;
+    padding: 8px 16px;
+    display: inline-block; 
+    margin: 2rem 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* About2 */
+.about2{
+    background-color: #222;
+    color: whitesmoke;
+}
+
+.about2-left{
+    flex-basis: 50%;
+}
+
+.about2-right{
+    flex-basis: 30%;
+}
+
+.about2 .card{
+    padding: 3rem 8rem;
+    background-color: #dcdcdc;
+    color: #222;
+    margin: 1.6rem;
+    text-align: center;
+}
+
+
+/* Process section */
+.process .row{
+    justify-content: center;
+}
+
+.process-content{
+    margin-top: 100px;
+}
+
+.progress-bar{
+    width: 80%;
+    height: 2px;
+    background-color: #222;
+    margin: auto;
+    position: relative;
+}
+
+.progress-bar .c1,
+.progress-bar .c2,
+.progress-bar .c3{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #222;
+}
+
+.progress-bar .c1{
+    top: -8px;
+    left: 50px;
+}
+
+.progress-bar .c2{
+    top: -8px;
+    left: 50%;
+}
+
+.progress-bar .c3{
+    top: -8px;
+    right: 50px;
+}
+
+.process .box1,
+.process .box2,
+.process .box3{
+    padding: 1.8rem;
+}
+
+.process .box2{
+    text-align: center;
+}
+
+.process .box3{
+    text-align: right;
+}
+
+.process-content h2{
+    color: #4caf50;
+}
+
+/* testimonial section */
+.testi{
+    background-color: #222;
+    color: whitesmoke;
+}
+
+.testi .test{
+    background-color: #505050;
+    padding: 4rem 8rem;
+    margin: 0 1rem;
+}
+
+.testi .image{
+    height: 80px;
+    width: 80px;
+}
+.testi .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* contact section */
+.contact .row{
+    justify-content: center;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact form input{
+    width: 50%;
+}
+
+.contact form textarea{
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-size: 1.3rem;
+    resize: none;
+    margin: 1.2rem 0;
+    font-family: "poppins", sans-serif;
+}
+
+/* Footer */
+footer{
+    background-color: #222;
+    height: 80px;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+}

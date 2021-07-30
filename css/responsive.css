@@ -1,0 +1,65 @@
+/* Media Queries */
+
+@media(max-width: 768px){
+    nav{
+        flex-direction: column;
+        position: relative;
+    }
+    nav box-icon{
+        position: absolute;
+        display: block;
+        top: 18px;
+        right: 32px;
+    }
+    nav ul{
+        background-color: whitesmoke;
+        display: none;
+    }
+    nav ul li{
+        padding: 2% 0;
+        display: block;
+    }
+    nav ul li a{
+        color: #222;
+    }
+    .showmenu{
+        display: block;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .header-content{
+        width: 100%;
+        left: 0;
+        text-align: center;
+        padding: 0 8px;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=submit]{
+        width: 80%;
+        margin: 1.2rem auto;
+    }
+    .progress-bar{
+        display: none;
+    }
+    .process-content{
+        margin-top: 20px;
+    }
+    .process .box1, 
+    .process .box2, 
+    .process .box3{
+        text-align: center;
+    }
+    .testi .test{
+        margin: 1.4rem 0;
+    }
+    .contact form input,
+    .contact form textarea{
+        width: 100%;
+    }
+    .process h1{
+        text-align: center;
+    }
+
+}
